@@ -1,0 +1,24 @@
+{
+  "name": "localz-driver-uri-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/localz/localz-driver-uri-generator.git"
+  },
+  "author": "Dave Olsen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/localz/localz-driver-uri-generator/issues"
+  },
+  "homepage": "https://github.com/localz/localz-driver-uri-generator#readme",
+  "dependencies": {
+    "base-64": "^0.1.0",
+    "joi-browser": "^13.0.1",
+    "qs": "^6.5.1"
+  }
+}
