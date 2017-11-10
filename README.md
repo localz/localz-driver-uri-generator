@@ -9,7 +9,9 @@ Handles object validation, base64 encoding, and query stringifying.
 For notifying customers of a driver's approach.
 
 **type** - 'notify'
+
 **data schema** - shown using Joi object syntax
+
 ```javascript
 Joi.object().keys({
   user: Joi.object().required().keys({
