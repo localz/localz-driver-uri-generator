@@ -15,22 +15,22 @@ For notifying customers of a driver's approach.
 ```javascript
 Joi.object().keys({
   user: Joi.object().required().keys({
-    id: Joi.string().required(),
-    password: Joi.string(),
-    firstname: Joi.string(),
-    lastname: Joi.string(),
-    mobile: Joi.string()
+    id: Joi.string().required(), // User ID associated with the order or job. "155176"
+    password: Joi.string(), // Static password for the user. "hunter2"
+    firstname: Joi.string(), // First name of the user. "Geraint"
+    lastname: Joi.string(), // Last name of the user. "Llewelyn"
+    mobile: Joi.string() // The phone number for the user. "07432770100"
   }),
   job: Joi.object().required().keys({
-    id: Joi.string().required(),
-    start: Joi.string().isoDate(),
-    end: Joi.string().isoDate()
+    id: Joi.string().required(), // Order or job number that is unique. "00000155X1AS"
+    start: Joi.string().isoDate(), // The start of the timebox for the order or job. "31/12/2000 12:00:59"
+    end: Joi.string().isoDate() // The end of the timebox for the order or job. "31/12/2000 12:00:59"
   }),
   contact: Joi.object().required().keys({
-    address: Joi.string().required(),
-    postcode: Joi.string().required(),
-    name: Joi.string(),
-    phone: Joi.string()
+    address: Joi.string().required(), // Address of the destination, one line, including postcode. "742 Evergreen Terrace, London, SW11 5UR"
+    postcode: Joi.string().required(), // Postcode of the destination, used as a fallback. "SW11 5UR"
+    name: Joi.string(), // Name of the intended contact. "Bruce"
+    phone: Joi.string() // The phone number for the contact. "+447432770200"
   })
 })
 ```
