@@ -14,8 +14,8 @@ const NotifyDataSchema = Joi.object().keys({
   }),
   job: Joi.object().required().keys({
     id: Joi.string().required(),
-    start: Joi.string(),
-    end: Joi.string()
+    start: Joi.string().isoDate(),
+    end: Joi.string().isoDate()
   }),
   contact: Joi.object().required().keys({
     address: Joi.string().required(),
