@@ -42,5 +42,26 @@ Specify the type of URI, the correct data object, and optionally a callback.
 ```javascript
 import generateURI from 'localz-driver-uri-generator'
 
+const data = {
+  user: {
+    id: 'techuser1',
+    password: '123123',
+    firstname: 'Thor',
+    lastname: 'Ragnarok',
+    mobile: '+61408325678'
+  },
+  job: {
+    id: 'JOB-123',
+    start: '2017-11-15T11:14:23+00:00',
+    end: '2017-11-15T11:14:23+00:00'
+  },
+  contact: {
+    address: '500 Bourke St, Melbourne, Australia',
+    postcode: '3000',
+    name: 'Hulk',
+    phone: '+61418345678'
+  }
+}
+
 const uri = generateURI('notify', data, 'someapp://')
 ```
